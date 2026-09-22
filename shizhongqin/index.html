@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="石钟琴个人资料、经典舞蹈作品《白毛女》选段赏析、舞台生涯回顾及艺术成就介绍。">
+    <meta name="keywords" content="石钟琴, 白毛女, 舞蹈家, 上海歌舞团, 经典舞蹈作品">
+    <title>石钟琴-经典舞蹈艺术家与《白毛女》舞台生涯回顾</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B2E2E;
+            --secondary-color: #D4AF37;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #F9F9F9;
+            --white: #FFFFFF;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        .section-title p {
+            color: var(--text-gray);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/dance_stage/1920/800');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #bfa030;
+        }
+
+        /* Artist Bio */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .bio-img {
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            height: 400px;
+        }
+
+        .bio-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .bio-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #ddd;
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+            width: 50%;
+            padding: 0 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            top: 5px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -8px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -8px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Works Gallery */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .work-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .work-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .work-img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .work-info {
+            padding: 20px;
+        }
+
+        .work-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .work-info p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Stats Section */
+        .stats {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 0;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bio-img {
+                height: 300px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+                text-align: left !important;
+            }
+
+            .timeline-item:nth-child(odd) {
+                text-align: left !important;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-dot {
+                left: 12px !important;
+                right: auto !important;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <span>艺术档案</span> 石钟琴
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#bio">人物简介</a></li>
+                    <li><a href="#works">经典作品</a></li>
+                    <li><a href="#timeline">艺术生涯</a></li>
+                    <li><a href="#legacy">艺术传承</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>石钟琴</h1>
+                <p>中国芭蕾舞剧《白毛女》中“喜儿”的首创者之一，中国民族芭蕾艺术的代表人物</p>
+                <a href="#works" class="btn">浏览经典作品</a>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section id="bio" class="section">
+            <div class="container">
+                <div class="bio-grid">
+                    <img src="https://picsum.photos/seed/shizhongqin_portrait/600/800" alt="石钟琴肖像" class="bio-img">
+                    <div class="bio-content">
+                        <h3>舞坛经典：石钟琴的艺术人生</h3>
+                        <p>石钟琴，中国著名芭蕾舞表演艺术家，曾任上海歌舞团舞蹈演员。她最为人熟知的成就是在上海芭蕾舞团主演了中国第一部大型芭蕾舞剧《白毛女》。在剧中，她成功塑造了受尽欺凌却坚强不屈的农村少女“喜儿”形象，这一角色成为了几代中国观众的集体记忆。</p>
+                        <p>石钟琴的表演风格细腻传神，将西方芭蕾的技巧与中国民族民间舞的韵味完美融合。她跳出的“喜儿”既有芭蕾的优雅身姿，又充满了泥土的芬芳和人物的血肉情感。这一艺术形象不仅在国内引起了巨大轰动，也在国际上为中国芭蕾赢得了声誉。</p>
+                        <p>除了《白毛女》，石钟琴在《红色娘子军》等经典剧目中亦有出色表现，其艺术成就为中国芭蕾舞的发展做出了重要贡献。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h3>《白毛女》</h3>
+                    <p>主演角色</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1970年代</h3>
+                    <p>辉煌时期</p>
+                </div>
+                <div class="stat-item">
+                    <h3>民族芭蕾</h3>
+                    <p>艺术探索</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>经典舞台作品</h2>
+                    <p>重温那些载入史册的舞蹈瞬间</p>
+                </div>
+                <div class="works-grid">
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/baihaoer_dance/400/300" alt="白毛女选段" class="work-img">
+                        <div class="work-info">
+                            <h4>《白毛女》- 喜儿</h4>
+                            <p>全剧核心女主角，展现了从天真烂漫到坚强反抗的完整成长弧光。著名的“北风吹”选段广为流传。</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/red_soldiers/400/300" alt="红色娘子军" class="work-img">
+                        <div class="work-info">
+                            <h4>《红色娘子军》- 吴琼花</h4>
+                            <p>另一部中国芭蕾经典，石钟琴在剧中饰演了性格泼辣、勇敢斗争的红军战士吴琼花。</p>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <img src="https://picsum.photos/seed/pantomime/400/300" alt="小刀会" class="work-img">
+                        <div class="work-info">
+                            <h4>《小刀会》</h4>
+                            <p>大型古典芭蕾舞剧，石钟琴在剧中也有重要角色，体现了深厚的芭蕾功底和戏剧表现力。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>艺术生涯历程</h2>
+                    <p>记录从艺之路的重要节点</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-date">1950年代-1960年代</span>
+                        <h4>初露锋芒</h4>
+                        <p>进入上海歌舞团（当时为上海舞蹈学校），接受严格的芭蕾舞训练，开始参与舞蹈剧目的排练与演出。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-date">1970年</span>
+                        <h4>《白毛女》诞生</h4>
+                        <p>在上海芭蕾舞团主演芭蕾舞剧《白毛女》，饰演“喜儿”。这一版本迅速风靡全国，成为一代人的文化记忆。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-date">1970年代-1980年代</span>
+                        <h4>全国巡演</h4>
+                        <p>随团进行大规模全国巡演，足迹遍布大江南北，将民族芭蕾艺术带到基层观众面前。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <span class="timeline-date">1990年代</span>
+                        <h4>艺术沉淀</h4>
+                        <p>逐渐从台前转向幕后，开始参与教学与艺术指导工作，培养新一代芭蕾舞人才，继续为舞蹈事业贡献力量。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy Section -->
+        <section id="legacy" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>艺术传承与影响</h2>
+                    <p>民族芭蕾的开拓者</p>
+                </div>
+                <div style="background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <h3>民族芭蕾的先行者</h3>
+                    <p>石钟琴的艺术实践证明，中国芭蕾舞完全可以走出一条具有民族特色的道路。她所饰演的“喜儿”，打破了西方芭蕾舞剧的固有模式，用中国观众喜闻乐见的形式讲述了中国的故事。这种“中西合璧”的艺术探索，为后来中国芭蕾舞剧的多元化发展奠定了坚实的基础。</p>
+                    <br>
+                    <h3>永恒的“喜儿”</h3>
+                    <p>时光荏苒，虽然经典舞台已谢幕，但石钟琴老师塑造的“喜儿”形象依然鲜活。她的作品不仅是历史的见证，更是中国芭蕾艺术宝库中的珍贵财富，激励着后来的舞者不断探索与创新。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 艺术档案网. 保留所有权利.</p>
+            <p>本页面为关于石钟琴的资料整理与回顾，旨在传播芭蕾舞艺术文化。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
