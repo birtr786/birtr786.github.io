@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cf穿越火线单机版 - 提供经典CF单机游戏下载、地图MOD推荐、枪械攻略及游戏攻略，重温经典射击乐趣，无需联网即可畅玩。">
+    <meta name="keywords" content="cf穿越火线单机版,CF单机,CF单机版下载,CF手游单机,CF网页版,穿越火线MOD">
+    <title>cf穿越火线单机版-经典单机射击游戏下载与攻略指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #00ffcc;
+            --secondary-color: #005f73;
+            --bg-dark: #0f1014;
+            --bg-card: #1a1c23;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --accent-red: #ff3333;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background: rgba(15, 16, 20, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .download-btn {
+            background: linear-gradient(90deg, var(--secondary-color), #008ba3);
+            color: white;
+            padding: 8px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 255, 204, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 16, 20, 0.7), rgba(15, 16, 20, 0.9)), 
+                        url('https://picsum.photos/seed/cfhero/1920/600.jpg') no-repeat center center/cover;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--accent-red);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Section Titles */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .more-link {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Game Grid */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #333;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-color: var(--primary-color);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            background-color: #2a2a2a;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            font-size: 12px;
+            padding: 2px 8px;
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+
+        .file-size {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .dl-btn {
+            font-size: 12px;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-widget {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .widget-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .guide-list li {
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 8px;
+        }
+
+        .guide-list li:last-child {
+            border-bottom: none;
+        }
+
+        .guide-list a {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .guide-list a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .hot-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .hot-rank {
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+
+        /* Feature Section */
+        .feature-section {
+            background: #15161a;
+            padding: 60px 0;
+            margin-top: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .feature-text {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0b0e;
+            padding: 40px 0 20px;
+            border-top: 1px solid #333;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+            font-size: 12px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                display: none; /* Simplified for mobile demo */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span style="font-size: 30px;">🔥</span> 
+                <div>
+                    CF单机版
+                    <div style="font-size: 12px; color: var(--text-muted); font-weight: normal;">经典单机射击</div>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">单机地图</a></li>
+                    <li><a href="#">枪械MOD</a></li>
+                    <li><a href="#">游戏攻略</a></li>
+                    <li><a href="#">社区讨论</a></li>
+                </ul>
+            </nav>
+            <a href="#download" class="download-btn">立即下载</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>重温 <span>CF穿越火线单机版</span> 经典战场</h1>
+                <p>无需联网，无需账号，随时随地体验原汁原味的CF枪战乐趣。海量地图MOD、自定义武器、生化模式，打造属于你的单机射击世界。</p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <a href="#" class="download-btn" style="padding: 12px 40px; font-size: 18px;">下载客户端</a>
+                    <a href="#guide" class="download-btn" style="background: transparent; border: 1px solid var(--primary-color); color: var(--primary-color);">查看安装教程</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">500+</div>
+                        <div class="stat-label">精选地图</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">100+</div>
+                        <div class="stat-label">强力武器</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">50w+</div>
+                        <div class="stat-label">玩家信赖</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container main-layout">
+            <!-- Left Content -->
+            <section class="content-area">
+                
+                <!-- Recommended Games -->
+                <div class="section-header">
+                    <h2 class="section-title">热门推荐</h2>
+                    <a href="#" class="more-link">查看更多 &raquo;</a>
+                </div>
+                <div class="game-grid">
+                    <article class="game-card">
+                        <img src="https://picsum.photos/seed/map1/400/300" alt="经典运输船单机版" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">经典运输船：决战之夜</h3>
+                            <div class="card-desc">原汁原味的运输船地图，增加了生化模式和无尽挑战关卡，枪械性能完美还原。</div>
+                            <div class="card-tags">
+                                <span class="tag">爆破模式</span>
+                                <span class="tag">生化模式</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-size">1.2 GB</span>
+                                <a href="#" class="dl-btn">立即下载</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <img src="https://picsum.photos/seed/map2/400/300" alt="金字塔之巅单机MOD" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">金字塔之巅：守卫战</h3>
+                            <div class="card-desc">金字塔地图的高清重制版，加入了机关陷阱和Boss战，挑战你的射击极限。</div>
+                            <div class="card-tags">
+                                <span class="tag">关卡挑战</span>
+                                <span class="tag">Boss战</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-size">850 MB</span>
+                                <a href="#" class="dl-btn">立即下载</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <img src="https://picsum.photos/seed/map3/400/300" alt="末日之城单机版" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">末日之城：僵尸围城</h3>
+                            <div class="card-desc">超大地图，大量僵尸刷新，你需要利用掩体和地形进行生存射击。</div>
+                            <div class="card-tags">
+                                <span class="tag">生存</span>
+                                <span class="tag">僵尸</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-size">1.5 GB</span>
+                                <a href="#" class="dl-btn">立即下载</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <img src="https:// picsum.photos/seed/map4/400/300" alt="黑色城镇单机加强版" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">黑色城镇：暗影行动</h3>
+                            <div class="card-desc">黑色城镇地图的暗黑风格变体，增加了狙击点和潜行任务。</div>
+                            <div class="card-tags">
+                                <span class="tag">潜行</span>
+                                <span class="tag">狙击</span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="file-size">980 MB</span>
+                                <a href="#" class="dl-btn">立即下载</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Latest News/Articles -->
+                <div class="section-header" style="margin-top: 50px;">
+                    <h2 class="section-title">最新攻略与资讯</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+                    <div class="game-card" style="padding: 20px; display: flex; gap: 20px; align-items: center;">
+                        <img src="https://picsum.photos/seed/guide1/150/150" style="width: 150px; height: 150px; border-radius: 4px;" alt="攻略">
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 8px;"><a href="#">CF单机版最新版本更新日志：新增M4A1-雷神皮肤</a></h3>
+                            <p style="font-size: 14px; color: var(--text-muted);">本次更新优化了游戏流畅度，增加了新的XP系统，快来体验吧。</p>
+                        </div>
+                    </div>
+                    <div class="game-card" style="padding: 20px; display: flex; gap: 20px; align-items: center;">
+                        <img src="https://picsum.photos/seed/guide2/150/150" style="width: 150px; height: 150px; border-radius: 4px;" alt="攻略">
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 8px;"><a href="#">新手必看：如何安装CF单机版地图MOD</a></h3>
+                            <p style="font-size: 14px; color: var(--text-muted);">详细图文教程，手把手教你将下载的地图文件放入游戏目录。</p>
+                        </div>
+                    </div>
+                    <div class="game-card" style="padding: 20px; display: flex; gap: 20px; align-items: center;">
+                        <img src="https://picsum.photos/seed/guide3/150/150" style="width: 150px; height: 150px; border-radius: 4px;" alt="攻略">
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 8px;"><a href="#">枪械数据解析：AK47在单机版中的伤害表现</a></h3>
+                            <p style="font-size: 14px; color: var(--text-muted);">深度数据分析，告诉你哪把枪在单机模式下刷怪最快。</p>
+                        </div>
+                    </div>
+                    <div class="game-card" style="padding: 20px; display: flex; gap: 20px; align-items: center;">
+                        <img src="https://picsum.photos/seed/guide4/150/150" style="width: 150px; height: 150px; border-radius: 4px;" alt="攻略">
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 8px;"><a href="#">生化模式技巧：如何成为最后的幸存者</a></h3>
+                            <p style="font-size: 14px; color: var(--text-muted);">掌握跳跃、投掷和走位技巧，在生化模式中立于不败之地。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="sidebar">
+                <!-- Quick Download Widget -->
+                <div class="sidebar-widget" id="download">
+                    <div class="widget-title">极速下载</div>
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 5px;">推荐版本：CF单机版 v9.0</div>
+                        <a href="#" style="font-size: 24px; font-weight: bold; color: var(--primary-color);">点击下载</a>
+                    </div>
+                    <ul style="font-size: 13px; color: var(--text-muted);">
+                        <li>✓ 绿色免安装</li>
+                        <li>✓ 官方数据兼容</li>
+                        <li>✓ 修复卡顿BUG</li>
+                        <li>✓ 包含所有枪械</li>
+                    </ul>
+                </div>
+
+                <!-- Guide Widget -->
+                <div class="sidebar-widget">
+                    <div class="widget-title">新手指南</div>
+                    <ul class="guide-list">
+                        <li><a href="#">单机版与网游的区别</a></li>
+                        <li><a href="#">如何修改游戏画质</a></li>
+                        <li><a href="#">常用快捷键大全</a></li>
+                        <li><a href="#">解决无法启动问题</a></li>
+                        <li><a href="#">加入自定义房间方法</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hot Maps Widget -->
+                <div class="sidebar-widget">
+                    <div class="widget-title">热门地图排行</div>
+                    <ul class="hot-list">
+                        <li><a href="#">运输船经典版 <span class="hot-rank">1</span></a></li>
+                        <li><a href="#">死亡十字 <span class="hot-rank">2</span></a></li>
+                        <li><a href="#">金字塔 <span class="hot-rank">3</span></a></li>
+                        <li><a href="#">卫星城 <span class="hot-rank">4</span></a></li>
+                        <li><a href="#">沙漠灰 <span class="hot-rank">5</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Banner Placeholder -->
+                <div style="background: #2a2a2a; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #555;">
+                    广告位
+                </div>
+            </aside>
+        </div>
+
+        <!-- Features Section -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-title">原味复刻</div>
+                        <div class="feature-text">完美还原CF经典地图与枪械手感，支持多种经典模式。</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-title">安全无毒</div>
+                        <div class="feature-text">所有资源经过严格检测，绿色安全，放心下载。</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <div class="feature-title">极速启动</div>
+                        <div class="feature-text">优化启动速度，低配置电脑也能流畅运行。</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎮</div>
+                        <div class="feature-title">MOD丰富</div>
+                        <div class="feature-text">支持地图、皮肤、音效等MOD自由安装。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" style="flex: 2; min-width: 300px;">
+                    <h4>关于 CF单机版</h4>
+                    <p style="max-width: 500px; line-height: 1.8;">
+                        本站致力于为CF爱好者提供最优质的单机游戏资源。我们提供最新的地图MOD、枪械补丁以及详细的游戏攻略，让你在没有网络的情况下也能享受枪战的快感。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">游戏下载</a></li>
+                        <li><a href="#">地图专区</a></li>
+                        <li><a href="#">武器库</a></li>
+                        <li><a href="#">新手教程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>合作邮箱: contact@cf-single.com</li>
+                        <li>QQ群: 123456789</li>
+                        <li>反馈建议: 点击提交</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CF穿越火线单机版资源站 版权所有 | 本站内容仅供学习交流使用，版权归原作者所有。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
