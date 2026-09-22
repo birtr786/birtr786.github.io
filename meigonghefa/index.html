@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="湄公河发现全球最大淡水鱼 - 湄公河巨型鲶鱼最新观测报告、生态保护现状及湄公河流域生物多样性深度解析。">
+    <meta name="keywords" content="湄公河发现全球最大淡水鱼, 巨型鲶鱼, 湄公河生态, 湄公河生物多样性, 亚洲巨鲶, 湄公河大鱼">
+    <title>湄公河发现全球最大淡水鱼 - 湄公河巨型鱼类生态观测与报告</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #006064; /* Deep Cyan */
+            --accent-color: #00bcd4; /* Cyan */
+            --text-dark: #1a1a1a;
+            --text-gray: #555555;
+            --bg-light: #f4f7f6;
+            --bg-white: #ffffff;
+            --border-color: #e0e0e0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --header-height: 70px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Layout Utilities */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-color);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg-white);
+            height: var(--header-height);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(0, 96, 100, 0.6), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/seed/maekongfish/1920/1080') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn Up 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #00acc1;
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Articles */
+        .article-card {
+            background: var(--bg-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            transition: transform 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .article-image {
+            height: 300px;
+            width: 100%;
+        }
+
+        .article-body {
+            padding: 1.5rem;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .article-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .article-excerpt {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .read-more::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .read-more:hover::after {
+            margin-left: 10px;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-widget {
+            background: var(--bg-white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .fish-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--bg-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fish-list li:last-child {
+            border-bottom: none;
+        }
+
+        .fish-name {
+            font-weight: 500;
+        }
+
+        .fish-weight {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .fact-item {
+            margin-bottom: 1rem;
+        }
+
+        .fact-item strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 0.2rem;
+        }
+
+        /* Ecology Section */
+        .ecology-section {
+            background: white;
+        }
+
+        .ecology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .ecology-card {
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .ecology-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .ecology-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-light);
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background: white;
+        }
+
+        .faq-question:hover {
+            background: #fafafa;
+        }
+
+        .faq-answer {
+            padding: 0 1.2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            color: var(--text-gray);
+            background: #fafafa;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.2rem;
+            max-height: 200px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: #263238;
+            color: #eceff1;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: #b0bec5;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #37474f;
+            color: #78909c;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                display: none; /* Simplified for mobile */
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"></path><path d="M2 12c3-6 9-6 12 0s9 6 12 0"></path><path d="M7 12c3-6 6-6 7 0s4 6 7 0"></path></svg>
+                <span>湄公河生态</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#news">最新发现</a></li>
+                    <li><a href="#species">巨型鱼类</a></li>
+                    <li><a href="#ecology">生态保护</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>湄公河发现全球最大淡水鱼</h1>
+            <p>深入东南亚腹地，探索湄公河下游的神秘水域，见证自然界最令人惊叹的巨型生物。</p>
+            <a href="#news" class="btn">阅读观测报告</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>300kg+</h3>
+                    <p>巨型鲶鱼体重</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2.7m</h3>
+                    <p>体长记录</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>新物种发现</p>
+                </div>
+                <div class="stat-item">
+                    <h3>濒危</h3>
+                    <p>保护等级</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="news" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>最新发现与观测</h2>
+                    <p>关于湄公河巨型鱼类及其栖息环境的最新科学发现与实地考察报告。</p>
+                </div>
+                <div class="content-grid">
+                    <div class="article-feed">
+                        <article class="article-card">
+                            <img src="https://picsum.photos/seed/fish1/800/400" alt="湄公河巨型鲶鱼" class="article-image">
+                            <div class="article-body">
+                                <div class="article-meta">生态观测 · 2023年10月</div>
+                                <h3 class="article-title">湄公河下游巨型鲶鱼重现：生态恢复的积极信号</h3>
+                                <p class="article-excerpt">国际研究团队在柬埔寨洞里萨湖及湄公河下游区域再次监测到体重超过200公斤的巨型鲶鱼。这标志着当地水域生态系统的恢复工作取得了显著成效，但也提醒我们保护工作仍需持续投入。</p>
+                                <a href="#" class="read-more">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <img src="https://picsum.photos/seed/fish2/800/400" alt="湄公河捕鱼" class="article-image">
+                            <div class="article-body">
+                                <div class="article-meta">实地考察 · 2023年9月</div>
+                                <h3 class="article-title">深入丛林：寻找湄公河“巨怪”的科考之旅</h3>
+                                <p class="article-excerpt">为了验证关于湄公河发现全球最大淡水鱼的传闻，一支由生物学家组成的探险队深入老挝与泰国边境的原始水域。他们不仅记录了珍贵的影像资料，还采集了水样数据，为后续研究提供了重要依据。</p>
+                                <a href="#" class="read-more">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="article-card">
+                            <img src="https://picsum.photos/seed/fish3/800/400" alt="湄公河环境" class="article-image">
+                           水坝建设与洄游通道的博弈
+                            <div class="article-body">
+                                <div class="article-meta">深度分析 · 2023年8月</div>
+                                <h3 class="article-title">水坝建设与洄游通道的博弈：如何平衡发展与保护</h3>
+                                <p class="article-excerpt">湄公河沿岸的水利工程对巨型鱼类的繁殖造成了巨大影响。本文探讨了如何通过科学规划洄游通道，在保障能源供应的同时，为全球最大的淡水鱼保留生存空间。</p>
+                                <a href="#" class="read-more">阅读全文</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <aside>
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">巨型鱼类名录</h3>
+                            <ul class="fish-list">
+                                <li>
+                                    <span class="fish-name">巨型鲶鱼</span>
+                                    <span class="fish-weight">300kg</span>
+                                </li>
+                                <li>
+                                    <span class="fish-name">湄公河巨鲶</span>
+                                    <span class="fish-weight">293kg</span>
+                                </li>
+                                <li>
+                                    <span class="fish-name">湄公河巨型石斑</span>
+                                    <span class="fish-weight">130kg</span>
+                                </li>
+                                <li>
+                                    <span class="fish-name">巨型黄颡鱼</span>
+                                    <span class="fish-weight">60kg</span>
+                                </li>
+                                <li>
+                                    <span class="fish-name">巨型鲈鱼</span>
+                                    <span class="fish-weight">50kg</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">生态冷知识</h3>
+                            <div class="fact-item">
+                                <strong>寿命长达 80 年</strong>
+                                <p>某些湄公河巨型鱼类可以活到几十年甚至上百年，它们的生长速度极慢。</p>
+                            </div>
+                            <div class="fact-item">
+                                <strong>夜行性捕食者</strong>
+                                <p>这些大型鱼类通常在夜间活动，利用敏锐的嗅觉感知猎物。</p>
+                            </div>
+                            <div class="fact-item">
+                                <strong>洄游习性</strong>
+                                <p>它们需要长距离洄游到上游产卵，这使它们极易受到水坝阻隔的影响。</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="species" class="section ecology-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>主要巨型鱼类物种</h2>
+                    <p>了解栖息在湄公河流域的几种最具代表性的淡水巨型生物。</p>
+                </div>
+                <div class="ecology-grid">
+                    <div class="ecology-card">
+                        <div class="ecology-icon">🐟</div>
+                        <h3>巨型鲶鱼</h3>
+                        <p>以其惊人的体型和力量著称，是淡水生态系统中的顶级掠食者，通常栖息于深水区。</p>
+                    </div>
+                    <div class="ecology-card">
+                        <div class="ecology-icon">🐠</div>
+                        <h3>湄公河巨型石斑</h3>
+                        <p>拥有极其强壮的颚部，能够捕食其他鱼类，是湄公河中罕见的淡水大型肉食性鱼类。</p>
+                    </div>
+                    <div class="ecology-card">
+                        <div class="ecology-icon">🐡</div>
+                        <h3>巨鲈鱼</h3>
+                        <p>分布广泛，适应性强，在河流的缓流区域常见，是垂钓爱好者的热门目标。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecology" class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>生态保护与常见问题</h2>
+                    <p>关于湄公河流域环境保护、鱼类保护现状及相关疑问解答。</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            为什么湄公河能孕育出全球最大的淡水鱼？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            湄公河拥有独特的地理和气候条件。其流域横跨多个气候带，从高海拔雪山到热带河口，提供了丰富的食物来源和多样的栖息环境。此外，湄公河的年径流量巨大，为大型鱼类提供了充足的生存空间。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            湄公河发现全球最大淡水鱼对生态意味着什么？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            这种巨型鱼类的存在通常被视为生态系统健康的“旗舰物种”。它们的出现表明水域环境改善，食物链完整，且污染控制有效。同时，它们对维持水生生态平衡起着至关重要的作用。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            当前的保护措施有哪些？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            各国政府已设立禁渔期，并在部分关键产卵场建立保护区。同时，通过国际合作（如湄公河委员会 MRC），共同监测水质、管理水坝运行，并推广可持续的捕捞方式。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            湄公河巨型鱼类面临的主要威胁是什么？
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            主要威胁包括过度捕捞、水坝建设阻隔洄游通道、农业污染以及气候变化导致的水位波动。这些因素共同导致了种群数量的急剧下降。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于湄公河生态</h4>
+                    <p style="color: #b0bec5; font-size: 0.9rem;">
+                        致力于记录和保护湄公河流域的生物多样性。通过科学研究和公众教育，呼吁更多人关注这条生命之河的未来。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关栏目</h4>
+                    <ul>
+                        <li><a href="#">鱼类百科</a></li>
+                        <li><a href="#">水坝影响</a></li>
+                        <li><a href="#">社区论坛</a></li>
+                        <li><a href="#">志愿者招募</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><a href="#">合作咨询</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 湄公河生态观测站. All rights reserved. 本网站内容仅供科普参考。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 手风琴效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
